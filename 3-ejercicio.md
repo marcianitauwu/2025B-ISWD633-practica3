@@ -1,5 +1,5 @@
 ## Esquema para el ejercicio
-![Imagen](img/esquema-ejercicio3.PNG)
+![Imagen](esquema-ejercicio3.PNG)
 
 ### Crear red net-wp
 # COMPLETAR CON EL COMANDO COMANDO
