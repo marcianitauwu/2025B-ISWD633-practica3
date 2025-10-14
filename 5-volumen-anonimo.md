@@ -1,11 +1,17 @@
 ## VOLUMEN ANÓNIMO
-Un volumen anónimo es un volumen que Docker crea automáticamente sin nombre específico cuando ejecutas un contenedor. Son útiles cuando deseas almacenar datos temporalmente sin preocuparte por el nombre del volumen. Docker asigna un identificador único en lugar de un nombre. Se utilizan principalmente para almacenamiento temporal. 
+Un volumen anónimo es un volumen gestionado por Docker, el volumen se crea automáticamente sin un nombre específico cuando ejecutas un contenedor. Son útiles cuando deseas almacenar datos temporalmente sin preocuparte por el nombre del volumen. Docker asigna un identificador único en lugar de un nombre. Se utilizan principalmente para almacenamiento temporal. 
 **Considerar**
 Los datos persisten mientras el contenedor exista, pero son más difíciles de gestionar y referenciar después.
 
 ```
 docker run -d --name <nombre contenedor> -v <ruta carpeta contenedor> <nombre imagen>
 ```
+ó
+```
+docker run -d --name <nombre contenedor> --mount type=volume,target=<ruta carpeta contenedor> <nombre_imagen>
+```
+destination, dst, target: La ruta donde se monta el archivo o directorio en el contenedor.
+
 
 ### Para eliminar el contenedor y el volumen
 ```
