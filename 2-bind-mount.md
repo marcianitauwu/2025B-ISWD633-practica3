@@ -1,4 +1,4 @@
-# VOLUMEN TIPO HOST
+# BIND MOUNT
 Un volumen host es un tipo de volumen donde se monta un directorio o archivo específico del sistema de archivos del host en un contenedor.
 
 ```
@@ -32,20 +32,5 @@ docker run -d --name <nombre contenedor> -v <ruta carpeta host>:<ruta carpeta co
 Si quieres incluir el comando pwd dentro de un comando de Docker, lo puedes hacer de diferentes maneras dependiendo del shell que estés utilizando.
 
 
-### Volumen tipo host usando PWD y PowerShell
-```
-docker run -d --name <nombre contenedor> --publish published=<valorPuertoHost>,target=<valor> -v ${PWD}/<ruta relativa>:<ruta absoluta> <nombre imagen>:<tag> 
-```
 
-### Volumen tipo host usando PWD (Git Bash)
-
-```
-docker run -d --name <nombre contenedor> --publish published=<valorPuertoHost>,target=<valor> -v $(pwd -W)/html:/usr/share/nginx/html <nombre imagen>:<tag> 
-```
-
-### Volumen tipo host usando PWD (en Linux)
-
-```
-docker run -d --name <nombre contenedor> --publish published=<valorPuertoHost>,target=<valor> -v $(pwd)/html:/usr/share/nginx/html <nombre imagen>:<tag> 
-```
 
