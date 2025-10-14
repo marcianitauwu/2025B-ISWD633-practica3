@@ -4,6 +4,11 @@ En un bind mount mapeamos (montar) un directorio o archivo específico del siste
 ```
 docker run -d --name <nombre contenedor> -v <ruta carpeta host>:<ruta carpeta contenedor> <imagen> 
 ```
+ó
+```
+docker run -d --name <nombre contenedor> --mount type=bind,source=<ruta carpeta host>,target=<ruta carpeta contenedor> <imagen>
+
+```
 ### En tu computador crear una carpeta llamada nginx y dentro de esta carpeta crea otra llamada html. Como se aprecia en la figura.
 ![Volúmenes](directorio.PNG)
 
