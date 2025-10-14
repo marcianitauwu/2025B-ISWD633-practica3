@@ -10,7 +10,7 @@ Un volumen es un mecanismo para persistir datos generados y utilizados por conte
 
 ![Volúmenes](types-of-mounts.png)
 
+- bind mount: Carpeta o archivo del host montado directamente
 - volume: Volumen administrado por Docker
-- bind: Carpeta o archivo del host montado directamente
 - tmpfs: Sistema de archivos temporal en memoria (no persistente)
 ### Es importante recordar que los volúmenes deben configurarse durante la creación del contenedor, ya que Docker no permite cambiar los volúmenes montados una vez que el contenedor ha sido creado
