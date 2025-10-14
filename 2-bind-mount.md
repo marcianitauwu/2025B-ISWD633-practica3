@@ -7,8 +7,10 @@ docker run -d --name <nombre contenedor> -v <ruta carpeta host>:<ruta carpeta co
 ó
 ```
 docker run -d --name <nombre contenedor> --mount type=bind,source=<ruta carpeta host>,target=<ruta carpeta contenedor> <imagen>
-
 ```
+- destination, dst, target: La ruta donde se monta el archivo o directorio en el contenedor.
+- source, src: El origen del montaje.
+  
 ### En tu computador crear una carpeta llamada nginx y dentro de esta carpeta crea otra llamada html. Como se aprecia en la figura.
 ![Volúmenes](directorio.PNG)
 
