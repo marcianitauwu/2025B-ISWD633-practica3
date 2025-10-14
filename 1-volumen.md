@@ -8,6 +8,6 @@ Un volumen es un mecanismo para persistir datos generados y utilizados por conte
 - Rendimiento: Los volúmenes están optimizados para el rendimiento en comparación con el uso de los sistemas de archivos montados del host.
 - Backup y Restauración: Es más fácil hacer copias de seguridad y restaurar datos desde volúmenes.
 
-![Volúmenes](volumenes.PNG)
+![Volúmenes](types-of-mounts.png)
 
 ### Es importante recordar que los volúmenes deben configurarse durante la creación del contenedor, ya que Docker no permite cambiar los volúmenes montados una vez que el contenedor ha sido creado
