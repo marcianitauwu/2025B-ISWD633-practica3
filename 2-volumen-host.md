@@ -1,5 +1,5 @@
 # VOLUMEN TIPO HOST
-Un volumen host (bind mount) es un tipo de volumen donde se monta un directorio o archivo específico del sistema de archivos del host en un contenedor.
+Un volumen host es un tipo de volumen donde se monta un directorio o archivo específico del sistema de archivos del host en un contenedor.
 
 ```
 docker run -d --name <nombre contenedor> -v <ruta carpeta host>:<ruta carpeta contenedor> <imagen> 
