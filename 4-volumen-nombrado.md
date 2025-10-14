@@ -17,9 +17,6 @@ Por ejemplo, en Windows las unidades de almacenamiento (como `C:`, `D:`, etc.) a
 
 Cuando creas un volumen nombrado, Docker asigna un punto de montaje específico en el sistema de archivos del host para ese volumen.
 
-### ¿Cuál es el Mountpoint de vol-postgres?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
-
 ### Estructura del Punto de Montaje:
 - /var/lib/docker/volumes/: Es la ubicación base donde Docker almacena todos los volúmenes en el sistema de archivos del host.
 - nombreVolumen/: Es el nombre del volumen nombrado que has creado. Docker crea un directorio con este nombre dentro de /var/lib/docker/volumes/ para almacenar los datos del volumen.
@@ -33,6 +30,13 @@ En el contexto de WSL (Windows Subsystem for Linux), wsl$ se refiere al nombre d
 ```
 docker run -d --name <nombre contenedor> -v <nombre volumen>:<ruta contenedor> <nombre imagen>
 ```
+ó
+```
+docker run -d --name <nombre contenedor> --mount type=volume,src=<nombre >,dst=<mount-path>
+```
+- destination, dst, target: La ruta donde se monta el archivo o directorio en el contenedor.
+- source, src: El origen del montaje. Para volúmenes con nombre, este es el nombre del volumen. Para volúmenes anónimos, este campo se omite.
+
 
 ### Crear la red net-drupal de tipo bridge
 # COMPLETAR CON EL COMANDO
