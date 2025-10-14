@@ -32,7 +32,5 @@ Ruta carpeta host: .../ejercicio3/www
 
 ### Eliminar el contenedor y crearlo nuevamente, ¿qué ha sucedido?
 
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
-
-
+# COMPLETAR CON LA RESPUESTA A LA PREGUNTA 
 
